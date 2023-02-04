@@ -7,72 +7,155 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&family=Readex+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" type="text/css" href="./src/css/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="./src/js/main.js" defer></script>
     <title>Document</title>
 </head>
 <body>
     <header class="header">
-        <div class="container js-header">
-            <div class="main-nav-holder">
-                <button class="nav-opener js-nav-opener">
-                    <span></span>
-                </button>
-                <nav class="header-nav">
-                    <div class="logo-holder">
-                        <a href="#" class="logo"> 
-                            <img  class="img-logo" src="./src/img/logo.svg" alt="Aie">
-                        </a>
-                    </div>
-                    <ul class="header-nav-list js-nav">
-                        <li class="header-nav-item">
-                            <a href="#" class="header-nav-item-link">Nous découvrir</a>
-                        </li>
-                        <li class="header-nav-item dropdown">
-                            <a href="#" class="header-nav-item-link sub-dropdown" id="second-sub">Nos activités</a>
-                            <div class="dropdown-content">
-                                <ul class="dropdown-items-waraper">
-                                    <li class="dropdown-item first">
-                                        <a href="#" class="dropdown-item-link">Ressourceries</a>
-                                    </li>
-                                    <li class="dropdown-item">
-                                        <a href="#" class="dropdown-item-link">Borne de collecte</a>
-                                    </li>
-                                    <li class="dropdown-item">
-                                        <a href="#" class="dropdown-item-link">Valorisation textile</a>
-                                    </li>
-                                    <li class="dropdown-item prelast">
-                                        <a href="#" class="dropdown-item-link">Nos <span class="link-span">boutiks</span></a>
-                                    </li>
-                                    <li class="dropdown-item last">
-                                        <a href="#" class="dropdown-item-link">Nos formations</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="header-nav-item">
-                            <a href="#" class="header-nav-item-link mobile">Nos actualités</a>
-                        </li>
-                        <li class="header-nav-item">
-                            <a href="#" class="header-nav-item-link">Nos adresses</a>
-                        </li>
-                        <li class="header-nav-item">
-                            <a href="#" class="header-nav-item-link">Postuler</a>
-                        </li>
-                        <li class="header-nav-item">
-                            <a href="tel:+380966704441" class="header-nav-item-link tel">
-                                <img src="./src/img/icons/phone.svg" class="phone"/>0596 76 38 18
+        <div class="container-wrapper">
+            <div class="container js-header">
+                <div class="main-nav-holder">
+                    <button class="nav-opener js-nav-opener">
+                        <span></span>
+                    </button>
+                    <nav class="header-nav">
+                        <div class="logo-holder">
+                            <a href="#" class="logo"> 
+                                <img  class="img-logo" src="./src/img/logo.svg" alt="Aie">
                             </a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="small-button-holder">
-                <a href="tel:+380966704441" class="header-nav-item-link tel small">
-                    <img src="./src/img/icons/phone.svg" class="phone"/>0596 76 38 18
-                </a>
+                        </div>
+                        <ul class="header-nav-list js-nav">
+                            <li class="header-nav-item">
+                                <a href="#" class="header-nav-item-link">Nous découvrir</a>
+                            </li>
+                            <li class="header-nav-item dropdown">
+                                <a href="#" class="header-nav-item-link sub-dropdown" id="second-sub">Nos activités</a>
+                                <div class="dropdown-content">
+                                    <ul class="dropdown-items-waraper">
+                                        <li class="dropdown-item first">
+                                            <a href="#" class="dropdown-item-link">Ressourceries</a>
+                                        </li>
+                                        <li class="dropdown-item">
+                                            <a href="#" class="dropdown-item-link">Borne de collecte</a>
+                                        </li>
+                                        <li class="dropdown-item">
+                                            <a href="#" class="dropdown-item-link">Valorisation textile</a>
+                                        </li>
+                                        <li class="dropdown-item prelast">
+                                            <a href="#" class="dropdown-item-link">Nos <span class="link-span">boutiks</span></a>
+                                        </li>
+                                        <li class="dropdown-item last">
+                                            <a href="#" class="dropdown-item-link">Nos formations</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="header-nav-item">
+                                <a href="#" class="header-nav-item-link mobile">Nos actualités</a>
+                            </li>
+                            <li class="header-nav-item">
+                                <a href="#" class="header-nav-item-link">Nos adresses</a>
+                            </li>
+                            <li class="header-nav-item">
+                                <a href="#" class="header-nav-item-link">Postuler</a>
+                            </li>
+                            <li class="header-nav-item">
+                                <a href="tel:+380966704441" class="header-nav-item-link tel">
+                                    <img src="./src/img/icons/phone.svg" class="phone"/>0596 76 38 18
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="small-button-holder">
+                    <a href="tel:+380966704441" class="header-nav-item-link tel small">
+                        <img src="./src/img/icons/phone.svg" class="phone"/>0596 76 38 18
+                    </a>
+                </div>
             </div>
         </div>
-        
-      </header>      
+    </header>
+    <section class="slider-section">
+        <div class="container">
+            <div class="slider-span"></div>
+            <div class="title-wrapper">
+                <h2 class="slider-title">Testimonials</h2>
+                <p class="slider-title-subtext">Excepteur sint occaecat cupidatat non proident</p>
+            </div>
+            <div class="slider-wrapper">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="custom-slide">
+                            <p class="slider-content-text">Slide1</p>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="custom-slide">
+                            <div class="content-text-wrapper">
+                                <p class="slider-content-text">Nulla vitae elit libero, a pharetra augue.
+                                    Aenean lacinia bibendum nulla sed consectetur.
+                               </p>
+                            </div>
+                            <div class="person-content">
+                                <div class="person-img-wrapper">
+                                    <img src="src/img/person1.svg" alt="person-img" class="person-img">
+                                </div>
+                                <ul class="person-info">
+                                    <li class="person-name">Dianne Russell</li>
+                                    <li class="person-profession">Marketing Coordinator</li>
+                                </ul>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="custom-slide">
+                            <div class="content-text-wrapper">
+                                <p class="slider-content-text">Sed ut perspiciatis unde omnis iste natus error
+                                    sit voluptatem accusantium doloremque laudantium.
+                               </p>
+                            </div>
+                            <div class="person-content">
+                                <div class="person-img-wrapper">
+                                    <img src="src/img/person2.svg" alt="person-img" class="person-img">
+                                </div>
+                                <ul class="person-info">
+                                    <li class="person-name">Robert Johnson</li>
+                                    <li class="person-profession">Graphic Designer</li>
+                                </ul>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="custom-slide">
+                            <div class="content-text-wrapper">
+                                <p class="slider-content-text">Nullam id dolor id nibh ultricies vehicula ut id
+                                    elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+                               </p>
+                            </div>
+                            <div class="person-content">
+                                <div class="person-img-wrapper">
+                                    <img src="src/img/person3.svg" alt="person-img" class="person-img">
+                                </div>
+                                <ul class="person-info">
+                                    <li class="person-name">Floyd Miles</li>
+                                    <li class="person-profession">President of Sales</li>
+                                </ul>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="custom-slide">
+                            <p class="slider-content-text">Slide5</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+            </div>
+        </div>
+    </section>     
 </html>

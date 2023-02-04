@@ -15,9 +15,6 @@ subLink.addEventListener(('mouseover') , () => {
     }
 );
 
-
-
-
 navOpener.addEventListener('click', () => {
     if (header.classList.contains('active')) {
         header.classList.remove('active');
@@ -26,4 +23,43 @@ navOpener.addEventListener('click', () => {
     }
 });
 
+const swiper = new Swiper('.swiper', {
+
+    direction: 'horizontal',
+    spaceBetween: 32,
+    loop: false,
+    slidesPerView: 3,
+    initialSlide: 1,
+    breakpoints :{
+        1440:{
+            slidesPerView: 3,
+            spaceBetween: 32
+        },
+        1024:{
+            slidesPerView: 3,
+            spaceBetween: 25
+        },
+
+        768:{
+            slidesPerView: 2,
+            spaceBetween: 24
+        },
+
+        375:{
+            slidesPerView: 1,
+            spaceBetween: 20
+        },
+
+        320:{
+            slidesPerView: 1,
+            spaceBetween: 20
+        }
+    },
+
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  
+});
 
