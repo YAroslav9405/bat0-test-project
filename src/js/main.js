@@ -3,6 +3,7 @@ let subMenu = document.querySelector('.dropdown-content');
 let navOpener = document.querySelector('.js-nav-opener');
 let header = document.querySelector('.js-header');
 
+
 let isMouseHover;
 
 subLink.addEventListener(('mouseover') , () => { 
@@ -18,8 +19,10 @@ subLink.addEventListener(('mouseover') , () => {
 navOpener.addEventListener('click', () => {
     if (header.classList.contains('active')) {
         header.classList.remove('active');
+        window.onscroll = null;
     } else {
         header.classList.add('active');
+        window.onscroll = function () { window.scrollTo(0, 0); };
     }
 });
 
@@ -62,4 +65,3 @@ const swiper = new Swiper('.swiper', {
     },
   
 });
-

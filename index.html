@@ -9,8 +9,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&family=Readex+Pro&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" type="text/css" href="./src/css/main.css">
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="./src/js/main.js" defer></script>
+    <script src="./src/js/accordion.js" async></script>
+    <script src="./src/js/accordion2.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+   
     <title>Document</title>
 </head>
 <body>
@@ -80,7 +83,7 @@
     </header>
     <section class="slider-section">
         <div class="container">
-            <div class="slider-span"></div>
+            <div class="slider-empty"></div>
             <div class="title-wrapper">
                 <h2 class="slider-title">Testimonials</h2>
                 <p class="slider-title-subtext">Excepteur sint occaecat cupidatat non proident</p>
@@ -155,6 +158,52 @@
                     </div>
                     <div class="swiper-pagination"></div>
                   </div>
+            </div>
+        </div>
+    </section>
+    <section class="faq">
+        <div class="container">
+            <div class="faq-main-holder">
+                <div class="faq-content">
+                    <div class="title-wrapper">
+                        <h2 class="slider-title">Frequently Asked Question</h2>
+                        <p class="slider-title-subtext">Excepteur sint occaecat cupidatat non proident</p>
+                        <div class="question-holder">
+                            <ul class="questions-list">
+                                <li class="question" id="answer1">
+                                    <div class="answe-holder">
+                                        <p class="question-item">Sed ut perspiciatis unde omnis iste natus ?</p>
+                                        <p class="unvisible-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ad enim optio, aliquam a possimus placeat quis repellat autem nisi!</p>
+                                    </div>
+                                    <button id="question1">
+                                        <span ></span>
+                                    </button>
+                                </li>
+                                <li class="question" id="answer2">
+                                    <div class="answe-holder">
+                                        <p class="question-item">Temporibus autem quibusdam et aut ?</p>
+                                        <p class="unvisible-text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque.</p>
+                                    </div>
+                                    <button id="question2">
+                                        <span ></span>
+                                    </button>
+                                </li>
+                                <li class="question" id="answer3">
+                                    <div class="answe-holder">
+                                        <p class="question-item">Sed ut perspiciatis unde omnis iste natus ?</p>
+                                        <p class="unvisible-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ad enim optio, aliquam a possimus placeat quis repellat autem nisi!</p>
+                                    </div>
+                                    <button id="question3">
+                                        <span ></span>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-img-wrraper">
+                    <img src="src/img/faq-img.svg" alt="faq-img">
+                </div>
             </div>
         </div>
     </section>     

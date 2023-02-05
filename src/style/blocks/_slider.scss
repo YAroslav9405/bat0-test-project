@@ -1,7 +1,8 @@
 .slider-section {
     font-family: $poppins;
+    margin-bottom: 60px;
 
-    .slider-span {
+    .slider-empty {
         @include media('>=desktop') {
             height: 367px;
         }
@@ -14,23 +15,6 @@
         display: block;
         margin: 0 auto;
     
-    }
-    
-    .slider-title {
-        margin-bottom: 6px;
-        font-weight: 600;
-        font-size: 32px;
-        line-height: 42px;
-        text-align: center;
-    }
-    
-    .slider-title-subtext {
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 24px;
-        color: $smallText;
-        text-align: center;
-        margin: 0 0 32px;
     }
     
     .content-text-wrapper {
@@ -220,4 +204,21 @@
         line-height: 10px;
         color: #666666;
     }
+}
+
+.slider-title {
+    margin-bottom: 6px;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 42px;
+    text-align: center;
+}
+
+.slider-title-subtext {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: $smallText;
+    text-align: center;
+    margin: 0 0 32px;
 }
