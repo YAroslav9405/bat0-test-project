@@ -33,7 +33,7 @@
         padding: 0;
 
         @include media('>=tablet') {
-            padding: 112.5px 0 112.5px;
+            padding: 112.5px 0 0 0;
         }
     }
     
