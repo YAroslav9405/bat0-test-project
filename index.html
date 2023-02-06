@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&family=Readex+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Poppins:wght@300;400;500;600&family=Readex+Pro:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" type="text/css" href="./src/css/main.css">
     <script src="./src/js/main.js" defer></script>
     <script src="./src/js/accordion.js" async></script>
-    <script src="./src/js/accordion2.js" defer></script>
+    <script src="./src/js/modal.js" async></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
    
     <title>Document</title>
@@ -205,6 +205,52 @@
                     <img src="src/img/faq-img.svg" alt="faq-img">
                 </div>
             </div>
+        </div>
+    </section>
+    <section class="contact-us">
+        <div class="contact-us-holder" style="background-image: url('src/img/contact.jpg') ;">
+            <div class="container">
+                <div class="contact-title-holder">
+                    <h2 class="contact-title">Grow Your Company Faster Than Ever Before</h2>
+                </div>
+                <button class="contact-button">
+                    <span>Contact Us</span>
+                </button>
+            </div>
+        </div>
+        <div class="modal-window-place">
+            <div class="modal">
+                <div class="title-button-wrapper">
+                    <div class="modal-title-wrapper">
+                        <h2 class="modal-title">contact us</h2>
+                    </div>
+                    <button class="close-btn">
+                        <span></span>
+                    </button>
+                </div>
+                <form class="contact-form">
+                  <div class="input-group">
+                      <div class="name-holder">
+                        <input type="text" placeholder="First Name" required />
+                        <input type="text" placeholder="Last Name" required />
+                      </div>
+                  </div>
+                  <div class="input-group">
+                    <input type="email" placeholder="Your Email" required />
+                  </div>
+                  <div class="input-group">
+                    <input type="text" placeholder="Company Name (optional)" />
+                  </div>
+                  <div class="input-group last">
+                    <input type="text" placeholder="Enquiry" required />
+                  </div>
+                  <div class="input-group check">
+                    <input type="checkbox" id="checkbox" required />
+                    <label for="checkbox" class="checkbox-label">I agree to the <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a></label>
+                  </div>
+                  <button type="submit">Send</button>
+                </form>
+              </div>              
         </div>
     </section>     
 </html>

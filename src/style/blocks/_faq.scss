@@ -1,5 +1,6 @@
 .faq {
     font-family: $poppins;
+    margin-bottom: 36px;
     
     .container {
         @include media('>1440px') {
